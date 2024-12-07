@@ -1,5 +1,5 @@
 NAME = libftprintf.a
-SRCS = ft_putchar.c ft_putnbr_base.c ft_putstr.c ft_printf.c pointer.c putnbr_unsigned.c
+SRCS = ft_putchar.c ft_putnbr.c ft_putstr.c ft_printf.c pointer.c putnbr_unsigned.c
 
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)

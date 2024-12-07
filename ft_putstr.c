@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 21:46:47 by iarslan           #+#    #+#             */
-/*   Updated: 2024/11/13 03:45:28 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/12/07 21:38:37 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@ int	ft_putstr(char *s)
 	int	i;
 
 	i = 0;
+	if (!s)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	while (s[i])
 	{
 		write(1, &s[i], 1);
