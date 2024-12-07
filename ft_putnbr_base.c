@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 05:12:17 by iarslan           #+#    #+#             */
-/*   Updated: 2024/11/13 05:18:07 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/12/07 18:04:26 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,12 +53,12 @@ int	ft_putnbr_base(int nbr, char *base)
 
 	m = 0;
 	lngbr = (long)nbr;
-		if (lngbr < 0)
-		{
-			print_putchar('-');
-			lngbr = -lngbr;
-		}
-		convert_to_base(lngbr, base, result, &m);
+	if (lngbr < 0)
+	{
+		print_putchar('-');
+		lngbr = -lngbr;
+	}
+	convert_to_base(lngbr, base, result, &m);
 	nbrlen = m;
 	while (m > 0)
 		print_putchar(result[--m]);

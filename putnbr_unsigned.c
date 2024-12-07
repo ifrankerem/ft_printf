@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 19:05:49 by iarslan           #+#    #+#             */
-/*   Updated: 2024/11/13 05:29:33 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/12/07 18:04:03 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ static int	str_len(char *base)
 	return (x);
 }
 
-static void	convert_to_base(unsigned int lgnbr, char *base, char *result, int *m)
+static void	convert_to_base(unsigned int lgnbr,
+char *base, char *result, int *m)
 {
 	int	base_len;
 

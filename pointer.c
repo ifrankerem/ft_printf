@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 03:44:41 by iarslan           #+#    #+#             */
-/*   Updated: 2024/11/13 05:05:01 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/12/07 18:04:43 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ static int	pointerwrite(unsigned long long addr, char *base)
 	}
 	return (count);
 }
+
 int	wrtp(void *ptr)
 {
 	int				count;
@@ -41,7 +42,7 @@ int	wrtp(void *ptr)
 
 	count = 0;
 	if (ptr == NULL)
-		return(ft_putstr("(nil)"));
+		return (ft_putstr("(nil)"));
 	addr = (unsigned long long)ptr;
 	count += ft_putstr("0x");
 	count += pointerwrite(addr, "0123456789abcdef");
